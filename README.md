@@ -1,27 +1,59 @@
-# React + TypeScript + Vite
+# Firebase Image Upload with Progress Bar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React application that demonstrates how to upload multiple images to Firebase Storage with a progress bar. It uses Firebase v9 (modular SDK) for handling image uploads and fetching download URLs.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Upload multiple images to Firebase Storage.
+- Track upload progress with a progress bar.
+- Retrieve and display downloadable URLs for uploaded images.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Follow these steps to get the project up and running:
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone the repository:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+   ```bash
+   git clone https://github.com/your-username/firebase-image-upload.git
+   cd firebase-image-upload
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Install Dependencies
+   ```
+   npm install
+   ```
+
+3. Configure Firebase:
+
+Create a Firebase project at Firebase Console.
+Copy your Firebase config object and replace 'Your Firebase config here' in src/UploadImages.tsx with your actual configuration.
+
+4. Run the app
+   ```
+   npm run dev
+   ```
+
+The app will open in your browser at http://localhost:3000.
+
+## Usage
+Open the app in your browser.
+Click the "Choose File" button to select multiple image files for upload.
+Click the "Upload Images" button to start the upload process.
+Monitor the upload progress of each file.
+Once the upload is complete, you'll see the downloadable URLs for the uploaded images.
+Contributing
+Contributions are welcome! If you find any issues or want to enhance the functionality, feel free to create a pull request.
+
+## License
+This project is licensed under the MIT License.
+
+Note: This README is a template. Customize it according to your project's requirements and add any additional sections you deem necessary.
+
+vbnet
+Copy code
+
+Make sure to replace `'Your Firebase config here'` with your actual Firebase configuration and adjust any other details as needed. This README template provides a basic structure, and you can customize it further based on your project's specifics and any additional information you'd like to include.
+
+
+
+
